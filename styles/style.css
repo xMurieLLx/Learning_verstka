@@ -160,7 +160,8 @@ a:visited {
 }
 
 .contact h2{
-    text-align: center;
+    width: 650px;
+    text-align: left;
 }
 
 .form-group label {

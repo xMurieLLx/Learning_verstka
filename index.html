@@ -7,32 +7,64 @@
     <meta name="description" content="My first pet project">
     <meta name="keywords" content="html5, css3, course, javascript, tags">
     <title>Pet project for CV</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/styles_BS.css">
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
 </head>
 
 <body>
     <!-- <div></div> -блочный элемент
-        <span></span> - строчный жлемент -->
+    <span></span> - строчный жлемент -->
+    
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" p-0 href="/">
+          <img src="/assets/img/code.png" alt="logo.png" width="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/places.html">Favorite Places</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
         <div class="info">
             <img src="./assets/img/main_photo.JPG" alt="%no image found%" class="avatar">
             <div class="info-text">
-                <h1>Garabine Dmitri</h1>
+            <div class="container text-center my-5">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Garabine Dmitri</h1>
                 <p>Etudient en specialitee Junior Front-End Developpeur</p>
                 <h4>Mes réseaux sociaux</h4>
-                <a href="https://instagram.com/xmuriellx" target="_blank">Instagram</a>
-                |
-                <a href="https://t.me/xmuriellx" target="_blank">Telegram</a>
+                <a href="https://instagram.com/xmuriellx" target="_blank" class="btn btn-primary">Instagram</a>
+                <a href="https://t.me/xmuriellx" target="_blank" class="btn btn-primary">Telegram</a>
+              </div>
+            </div>
             </div>
         </div>
         <hr>
         <div class="card bg-yellow">
             <h2>Mes hobbies</h2>
-            <ol class="list">
+            <ul class="list">
                 <li>Codding</li>
                 <li>Sport. MMA. Ski</li>
                 <li>Plongee. Sport nautique</li>
-            </ol>
+            </ul>
         </div>
         <hr>
         <div class="card bg-green">
@@ -86,10 +118,17 @@
                     <label for="text">Your message</label>
                     <textarea id="text" cols="15" rows="2"></textarea>
                 </div>
-                <input class="btn" type="submit" value="Contact" name="" id="">
+                <input class="btn-contact" type="submit" value="Contact" name="" id="">
             </form>
             <div class="position">
-        <div class="box"></div>
+        <!-- <div class="box"></div> -->
     </div>
+
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <footer>
+        <p>Made by xMurieLLx <br>since 1988 ©</p>
+      </footer>
+    </nav>
+
 </body>
 </html>

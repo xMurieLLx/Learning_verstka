@@ -38,6 +38,23 @@ a:visited {
   margin-top: 1em;
 }
 
+.card {
+  padding: 1em;
+  background-color: #3b3f49;
+  border-radius: 1em;
+  box-shadow: 4px 4px 14px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+  background-color: #5f6166;
+}
+
+.card img {
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 4px 4px 14px 5px rgba(0, 0, 0, 0.25);
+}
+
 @media (max-width: 700px) {
   .info {
     display: block;
